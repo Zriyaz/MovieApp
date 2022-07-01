@@ -1,39 +1,114 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  background-color: #000000
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.imageContainer{
+  width: 100%;
+  height: auto
 }
 
-.App-header {
-  min-height: 100vh;
+.imgage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+
+}
+
+.main_cardContainer{
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+
+.trending_heading{
+  padding: 4rem 0px;
+}
+
+.trending_heading h3{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 42px;
+color: #FFFFFF;
+padding-left: 1rem;
+}
+
+/* ================================MOVIE DETAILS================= */
+.movie_details-container{
+  padding-top: 5rem;
+  padding-left: 3rem;
+  width: 30%;
+}
+
+.arrow{
+  padding: 1rem 0px;
+  cursor: pointer;
+}
+.details_heading{
+font-family: 'Helvetica Neue LT Pro';
+font-style: normal;
+font-weight: 500;
+font-size: 42px;
+line-height: 50px;
+display: flex;
+align-items: flex-end;
+color: #FFFFFF;
+}
+
+.details_rating{
+padding: 1rem 0px;
+font-family: 'Helvetica Neue LT Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #FFFFFF;
+}
+
+.details_text{
+  font-family: 'Helvetica Neue LT Pro';
+font-style: normal;
+font-weight: 400; 
+font-size: 20px;
+line-height: 152%;
+color: rgba(255, 255, 255, 0.7);
+}
+
+.release_date{
+  padding: 10px 0px;
+  display: flex;
+  width: 50%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+.release_date p, span  {
+font-family: 'Helvetica Neue LT Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.paginationContainer{
+  padding: 2rem 0;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+/* ====================Header Styles ============================ */
+.header{
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  background-color: #263F61;
+  padding: 0.5rem 1rem;
 }

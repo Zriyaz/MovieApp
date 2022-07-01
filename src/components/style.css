@@ -1,0 +1,108 @@
+/* ======================CARD CONTAINER===================== */
+.cardContainer{
+    width: 280px;
+    height: 270px;
+    background-color: #20385C;
+    margin: 8px;
+    padding-bottom: 2rem;
+    cursor: pointer;
+}
+
+.imageCardContainer{
+    width: 100%;
+    height: 89%;
+}
+
+.imageCard{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie_title{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+color: #fff;
+padding: 0 !important;
+margin-bottom: .3rem !important;
+}
+
+.cardHeaderConatiner{
+   width: 100%;
+   height: 25%;
+   background: linear-gradient(0deg, #1A2B4A 0%, #2B507C 105.38%);
+   display: flex;
+   justify-content:space-between; 
+   align-items: center;
+   padding: 0px 10px
+}
+
+.rating_conatiner{
+  display: flex;
+  align-items: center;
+}
+
+.rating{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+color: #CCCCCC;
+padding-left: 0.5rem;
+}
+
+
+/* =================================PAGINATION STYLE======================= */`
+.paginationStyle{
+    display: flex;
+}
+
+.page-link{
+    background-color: unset !important;
+    border: unset !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.active:{
+    text-decoration-line: underline !important;
+    color: #FF6A63 !important;
+}
+
+/* ======================Searchbar============ */
+.input_search{
+    height: 40px;
+    width: 425px;
+    display: flex;
+    align-items: center;
+    position: relative; 
+}
+.search{
+ width: 90%;
+ height: 100%;
+ background: rgba(255, 255, 255, 0.06); 
+ border: 1px solid rgba(255, 255, 255, 0.26);
+ border-radius: 5px;
+ padding: 0 10px;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 24px;
+ color: #fff;
+}
+
+.search_icon{
+    position: absolute;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    right: 40px;
+    height: 40px;
+    width: 10%;
+    background-color: #FF6A63;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    border-radius: 5px;
+
+}
