@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Arrow from "../icons/Arrow";
 import { useGetMovieDetailsQuery } from "../services/movies";
@@ -14,7 +14,7 @@ const MovieDetailsPage = () => {
   return (
     <div
       style={{
-        // backgroundImage: `url(${imageUrl})`,
+        backgroundImage: `url(${imageUrl})`,
         width: "100%",
         height: "100vh",
         backgroundPosition: "center",
@@ -22,9 +22,9 @@ const MovieDetailsPage = () => {
         objectFit: "cover",
         position: "relative",
         // backgroundRepeat: "no-repeat",
-        backgroundRepeat: "no-repeat",
+        // backgroundRepeat: "no-repeat",
         // background: `linear-gradient('90deg, #000000 0%, rgba(0, 0, 0, 0) 100%')`,
-        background: `linear-gradient(190deg, #000000 0%, rgba(0, 0, 0, 0)30%), url(${imageUrl})`,
+        // background: `linear-gradient(190deg, #000000 0%, rgba(0, 0, 0, 0)30%), url(${imageUrl})`,
       }}
     >
       <div className="movie_details-container">

@@ -3,7 +3,6 @@ import ReactPaginate from "react-paginate";
 import "./style.css";
 
 export const MoviePagination = ({ handlePageClick, pageCount }) => {
-  console.log("pageCount", pageCount);
   return (
     <>
       <ReactPaginate

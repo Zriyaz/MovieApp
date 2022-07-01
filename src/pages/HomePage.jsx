@@ -22,14 +22,8 @@ const HomePage = () => {
     isLoading,
   } = useGetPokemonByNameQuery(pageCount);
   const movies = moviesData?.results;
-  console.log("movies", movies);
   const { data: searchedMovies, refetch: searchRefetchMovie } =
     useGetSearchedMovieQuery({ movieName: searchText, pageCount: pageCount });
-  const [movieItems, setMovieItems] = useState(movies ? movies : []);
-  const [totalPageCount, setTotalPageCount] = useState(
-    searchText ? searchedMovies?.total_pages : moviesData?.total_pages
-  );
-  // searchText && setMovieItems(searchedMovies);
   const onClickHanadler = (id) => navigate(`/movie/${id}`);
 
   const imageBaseUrl = "https://image.tmdb.org/t/p/w500";
@@ -45,7 +39,6 @@ const HomePage = () => {
   useEffect(() => {
     searchRefetchMovie({ movieName: searchText, pageCount: pageCount });
   }, [searchText, searchRefetchMovie]);
-  console.log("searchText", searchText);
 
   return (
     <div>
@@ -73,7 +66,7 @@ const HomePage = () => {
           </header>
           <div
             style={{
-              // backgroundImage: `url(${imageUrl})`,
+              backgroundImage: `url(${imageUrl})`,
               width: "100%",
               height: "100vh",
               backgroundPosition: "center",
@@ -84,15 +77,9 @@ const HomePage = () => {
               // backgroundRepeat: "no-repeat",
               backgroundRepeat: "no-repeat !important",
               // background: `linear-gradient('90deg, #000000 0%, rgba(0, 0, 0, 0) 100%')`,
-              background: `linear-gradient(190deg, #000000 0%, rgba(0, 0, 0, 0)30%), url(${imageUrl})`,
+              // background: `linear-gradient(190deg, #000000 0%, rgba(0, 0, 0, 0)30%), url(${imageUrl})`,
             }}
-          >
-            {/* <img
-              src={"https://image.tmdb.org/t/p/w500" + movies[0]?.poster_path}
-              alt=""
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
-            /> */}
-          </div>
+          ></div>
           <div className="trending_heading">
             <h3>Trending</h3>
           </div>
