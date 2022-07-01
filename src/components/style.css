@@ -27,7 +27,7 @@ font-size: 16px;
 line-height: 140%;
 color: #fff;
 padding: 0 !important;
-margin-bottom: .3rem !important;
+margin-bottom: 0.3rem !important;
 }
 
 .cardHeaderConatiner{
@@ -67,7 +67,7 @@ padding-left: 0.5rem;
     color: rgba(255, 255, 255, 0.6) !important;
 }
 
-.active:{
+.active{
     text-decoration-line: underline !important;
     color: #FF6A63 !important;
 }
