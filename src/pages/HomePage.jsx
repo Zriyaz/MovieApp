@@ -38,7 +38,7 @@ const HomePage = () => {
 
   useEffect(() => {
     searchRefetchMovie({ movieName: searchText, pageCount: pageCount });
-  }, [searchText, searchRefetchMovie]);
+  }, [searchText, searchRefetchMovie, pageCount]);
 
   return (
     <div>
